@@ -342,7 +342,7 @@ void nand_read(unsigned char *buf, unsigned long start_addr, int size)
 #endif	
 
     /* 选中芯片 */
-    nand_select_chip();
+    nand_select_chip();//NFCONF bit
 
     for(i=start_addr; i < (start_addr + size);) {
       /* 发出READ0命令 */
